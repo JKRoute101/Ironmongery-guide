@@ -1,7 +1,7 @@
 {
   "name": "Ironmongery",
   "author": "Zendesk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "api_version": 4,
   "default_locale": "en-gb",
   "settings": [
@@ -292,6 +292,259 @@
           "description": "recent_activity_description",
           "label": "recent_activity_label",
           "value": true
+        }
+      ]
+    },
+    {
+      "label": "Category blocks",
+      "variables": [
+        {
+          "identifier": "blocks_padding",
+          "type": "range",
+          "description": "Padding size of the category blocks",
+          "label": "Blocks padding",
+          "value": 53,
+          "min": 0,
+          "max": 100
+        },
+        {
+          "identifier": "blocks_description",
+          "type": "list",
+          "description": "Show/hide item description",
+          "label": "Item description",
+          "value": "inline",
+          "options": [
+            {
+              "label": "Show",
+              "value": "inline"
+            },
+            {
+              "label": "Hide",
+              "value": "none"
+            }
+          ]
+        },
+        {
+          "identifier": "blocks_font_size",
+          "type": "range",
+          "description": "Title font size of the category blocks",
+          "label": "Item title font size",
+          "value": 14,
+          "min": 5,
+          "max": 50
+        },
+        {
+          "identifier": "blocks_font_case",
+          "type": "list",
+          "description": "Title font case of the category blocks",
+          "label": "Item title font case",
+          "value": "capitalize",
+          "options": [
+            {
+              "label": "Default",
+              "value": "none"
+            },
+            {
+              "label": "Uppercase",
+              "value": "uppercase"
+            },
+            {
+              "label": "Lowercase",
+              "value": "lowercase"
+            },
+            {
+              "label": "Capitalize",
+              "value": "capitalize"
+            }
+          ]
+        },
+        {
+          "identifier": "blocks_font_weight",
+          "type": "list",
+          "description": "Title font weight of the category blocks",
+          "label": "Item title font weight",
+          "value": "normal",
+          "options": [
+            {
+              "label": "Light",
+              "value": "300"
+            },
+            {
+              "label": "Normal",
+              "value": "normal"
+            },
+            {
+              "label": "Semi Bold",
+              "value": "600"
+            },
+            {
+              "label": "Bold",
+              "value": "900"
+            }
+          ]
+        },
+        {
+          "identifier": "blocks_txt_color",
+          "type": "color",
+          "description": "Text color of the category blocks",
+          "label": "Text color",
+          "value": "rgba(0, 0, 0, 1)"
+        },
+        {
+          "identifier": "blocks_txt_color_hover",
+          "type": "color",
+          "description": "Text color of the category blocks (hover state)",
+          "label": "Text color (hover)",
+          "value": "rgba(0, 0, 0, 1)"
+        },
+        {
+          "identifier": "blocks_bg_color_top",
+          "type": "color",
+          "description": "Blocks top gradient background color",
+          "label": "Top gradient bg color",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "blocks_bg_color_bottom",
+          "type": "color",
+          "description": "Blocks bottom gradient background color",
+          "label": "Bottom gradient bg color",
+          "value": "rgba(238, 238, 238, 1)"
+        },
+        {
+          "identifier": "blocks_bg_color_top_h",
+          "type": "color",
+          "description": "Blocks top gradient background color (hover state)",
+          "label": "Top gradient bg color (hover)",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "blocks_bg_color_bottom_h",
+          "type": "color",
+          "description": "Blocks bottom gradient background color (hover state)",
+          "label": "Bottom gradient bg color (hover)",
+          "value": "rgba(255, 255, 255, 1)"
+        },
+        {
+          "identifier": "blocks_border_color",
+          "type": "color",
+          "description": "Border color of the category blocks",
+          "label": "Border color",
+          "value": "rgba(155, 155, 155, 1)"
+        },
+        {
+          "identifier": "blocks_border_color_h",
+          "type": "color",
+          "description": "Border color of the category blocks (hover state)",
+          "label": "Border color (hover)",
+          "value": "rgba(8, 59, 102, 1)"
+        },
+        {
+          "identifier": "blocks_shadow",
+          "type": "range",
+          "description": "Shadow size of the category blocks (hover state)",
+          "label": "Shadow size (hover)",
+          "value": 10,
+          "min": 0,
+          "max": 20
+        },
+        {
+          "identifier": "blocks_shadow_color",
+          "type": "color",
+          "description": "Shadow color of the category blocks (hover state)",
+          "label": "Shadow color (hover)",
+          "value": "rgba(0, 0, 0, 0.4)"
+        }
+      ]
+    },
+    {
+      "label": "Category icons",
+      "variables": [
+        {
+          "identifier": "blocks_icons",
+          "type": "list",
+          "description": "Show/hide category icons",
+          "label": "Category icons",
+          "value": "block",
+          "options": [
+            {
+              "label": "Show",
+              "value": "block"
+            },
+            {
+              "label": "Hide",
+              "value": "none"
+            }
+          ]
+        },
+        {
+          "identifier": "blocks_icons_size",
+          "type": "range",
+          "description": "Size of the category icons",
+          "label": "Icon size",
+          "value": 65,
+          "min": 30,
+          "max": 200
+        },
+        {
+          "identifier": "blocks_icon_1",
+          "type": "file",
+          "description": "Home category icon #1",
+          "label": "Home category icon #1"
+        },
+        {
+          "identifier": "blocks_icon_2",
+          "type": "file",
+          "description": "Home category icon #2",
+          "label": "Home category icon #2"
+        },
+        {
+          "identifier": "blocks_icon_3",
+          "type": "file",
+          "description": "Home category icon #3",
+          "label": "Home category icon #3"
+        },
+        {
+          "identifier": "blocks_icon_4",
+          "type": "file",
+          "description": "Home category icon #4",
+          "label": "Home category icon #4"
+        },
+        {
+          "identifier": "blocks_icon_5",
+          "type": "file",
+          "description": "Home category icon #5",
+          "label": "Home category icon #5"
+        },
+        {
+          "identifier": "blocks_icon_6",
+          "type": "file",
+          "description": "Home category icon #6",
+          "label": "Home category icon #6"
+        },
+        {
+          "identifier": "blocks_icon_7",
+          "type": "file",
+          "description": "Home category icon #7",
+          "label": "Home category icon #7"
+        },
+        {
+          "identifier": "blocks_icon_8",
+          "type": "file",
+          "description": "Home category icon #8",
+          "label": "Home category icon #8"
+        },
+        {
+          "identifier": "blocks_icon_9",
+          "type": "file",
+          "description": "Home category icon #9",
+          "label": "Home category icon #9"
+        },
+        {
+          "identifier": "blocks_icon_10",
+          "type": "file",
+          "description": "Home category icon #10",
+          "label": "Home category icon #10"
         }
       ]
     },
