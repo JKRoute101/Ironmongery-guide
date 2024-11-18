@@ -859,7 +859,7 @@ ul {
 
 .logo span {
   margin: 0 10px;
-  color: $brand_color;
+  color: black;
 }
 
 .logo a {
