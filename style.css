@@ -915,6 +915,10 @@ ul {
   display: inline-block;
 }
 
+.nav-wrapper-desktop {
+  background-color: #000;
+}
+
 @media (max-width: 768px) {
   .nav-wrapper-desktop {
     display: none;
