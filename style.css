@@ -915,9 +915,6 @@ ul {
   display: inline-block;
 }
 
-.nav-wrapper-desktop {
-  background-color: #000;
-}
 
 @media (max-width: 768px) {
   .nav-wrapper-desktop {
@@ -1122,6 +1119,10 @@ ul {
 
 #zd-modal-container~.skip-navigation {
   display: none;
+}
+
+.header {
+  background-color: #000000;
 }
 
 /***** User info in header *****/
