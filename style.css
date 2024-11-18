@@ -836,6 +836,13 @@ ul {
   justify-content: space-between;
 }
 
+.how-can-we-help {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+
+}
+
 @media (min-width: 1160px) {
   .header {
     padding: 0;
